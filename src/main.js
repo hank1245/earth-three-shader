@@ -95,7 +95,7 @@ function draw() {
 }
 
 function setSize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = canvasContainer.offsetWidth / canvasContainer.offsetHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.render(scene, camera);

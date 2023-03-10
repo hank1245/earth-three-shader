@@ -15,8 +15,10 @@
     </style>
   </head>
   <body>
-    <div class="flex h-screen bg-black">
-      <div class="w-1/3 flex flex-col justify-center items-center px-8">
+    <div class="flex flex-col h-screen bg-black md:flex-row">
+      <div
+        class="w-full md:w-1/3 flex flex-col justify-center items-center px-8 py-20 md:py-0"
+      >
         <div style="max-width: 700px mx-auto">
           <h1 class="text-white text-4xl mb-8">씨드앤</h1>
           <p class="text-gray-400 mb-8 text-2xl">
@@ -33,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="w-2/3" id="canvasContainer">
+      <div class="w-full h-full md:w-2/3" id="canvasContainer">
         <canvas id="three-canvas"></canvas>
       </div>
     </div>
